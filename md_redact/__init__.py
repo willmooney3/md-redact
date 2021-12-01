@@ -11,7 +11,10 @@ redacted_replacement = os.getenv('MD_REDACT_REPLACEMENT', '(redacted)')
 class RedactProcessor(InlineProcessor):
     def handleMatch(self, m, data):
         redact_content = os.getenv('MD_REDACT_CONTENT', False)
-        el = etree.Element('span', attrib={"class": "redacted"})
+        attrs = {}
+        if redact_content:
+            attrs = {"class": "redacted"}
+        el = etree.Element('span', attrib=attrs)
         el.text = redacted_replacement if redact_content else m.group(1)
         return el, m.start(0), m.end(0)
 
