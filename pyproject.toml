@@ -2,11 +2,11 @@
 name = "md-redact"
 version = "0.1.0"
 description = "Redact portions of content if a condition is met"
-readme = README.md
+readme = "README.md"
 authors = ["Will Mooney <will.mooney.3@gmail.com>"]
-license = MIT
-repository = https://github.com/willmooney3/md-redact
-homepage = https://github.com/willmooney3/md-redact
+license = "MIT"
+repository = "https://github.com/willmooney3/md-redact"
+homepage = "https://github.com/willmooney3/md-redact"
 
 [tool.poetry.dependencies]
 python = "^3.9"
