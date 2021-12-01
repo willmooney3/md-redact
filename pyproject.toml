@@ -2,7 +2,7 @@
 name = "md-redact"
 version = "0.1.0"
 description = "Redact portions of content if a condition is met"
-readme = README.rst
+readme = README.md
 authors = ["Will Mooney <will.mooney.3@gmail.com>"]
 
 [tool.poetry.dependencies]
